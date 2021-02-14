@@ -10,6 +10,9 @@ name: OpenWrt-CI-test
 on:
   schedule:
     - cron: 0 20 * * *
+  push:
+    branches: 
+      - master    
   release:
     types: [published]
 
